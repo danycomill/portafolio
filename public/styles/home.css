@@ -348,19 +348,4 @@ footer .box-footer .boxed div ul a:hover{
         flex-direction: column;
         /* margin-bottom: 3rem; */
     }
-
-
-
-
-
-
-
-
-    /* Otros ajustes necesarios para el encabezado y la barra de navegación */
-    /* ... */
-}
-
-@media screen and (max-width: 480px) {
-    /* Ajustes adicionales para pantallas aún más pequeñas */
-    /* ... */
 }

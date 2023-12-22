@@ -3,9 +3,9 @@ const express = require('express');
 const app = express();
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '/src/views'));
 
-const publicPath = path.resolve(__dirname, '../public');
+const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
 
 app.get('/', (req, res) => {
@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 
-let mainRouter = require('./routes/main.routes');
+let mainRouter = require('./src/routes/main.routes');
 app.use('/', mainRouter);
 
 // Manejo del error de puerto en uso
