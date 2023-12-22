@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #181818;
+}
+
+
+
+/* ///////////////////Estilos de barra de navegacion///////////////////// */
+
+header .section-nav ul{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header .section-nav li{
+    margin: 1.1rem;
+    list-style: none;
+}
+
+header .section-nav li a{
+    text-decoration: none;
+    color: #ffff;
+    font-weight: bolder;
+}
+/* /////////////////////////////////////////////////////////////////// */
+
+
+header .header-print{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+header .header-print div{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    text-align: center;
+}
+
+header .header-print h1{
+    margin-bottom: 2.8rem;
+    background: #ccc;
+  background: linear-gradient(#00ff7b ,#00fbff);
+  font-family: system-ui;
+  font-size: 6rem;
+  line-height: 115%;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+header .header-print p{
+    font-size: 1.6rem;
+    color: #dfdfdf;
+    font-weight: 200;
+    /* font-weight: ; */
+}
+/* /////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+/* ///////////////////Animacion de barra de habilidades///////////////////// */
+.slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.slider .slide-track{
+    display: flex;
+    animation: scroll 40s linear infinite;
+    --webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 33);
+}
+
+.slider .slide {
+    width: 67px;
+    margin: 4rem;
+}
+
+.slider .slide-track .slide img{
+    width: 100%;
+    color: #616161;
+}
+
+
+
+@keyframes scroll{
+    0%{
+        webkit-transform: tranlateX(0);
+        transform: tranlateX(0);
+    }
+
+    100%{
+        -webkit-transform: translateX(calc(-200px * 33));
+        transform: translateX(calc(-200px * 11));
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+
+
+/* ///////////////////Animacion de barra de habilidades///////////////////// */
+
+
+/* Agrega estos estilos en tu archivo CSS */
+
+main .container-more{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+
+main .container-more .nav-section button{
+    text-align: center;
+    margin: 2.7rem;
+    font-size: 1.2rem;
+    border-radius: 1.3rem;
+    border: 0.7px solid #ffffff;
+    color: #00ffbb;
+    font-weight: bolder;
+    background-color: #252525;
+    width: 13rem;
+    height: 4rem;
+    box-shadow: 0px 1px 10px #00eeff4f;
+    cursor:pointer;
+    transition: all 400ms ease;
+}
+
+main .container-more .nav-section button:hover{
+    color: #252525;
+    background-color: #00fbff;
+}
+
+ 
+.content-card{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+.content-card .card {
+    border-radius: 30px 30px 15px 15px;
+    background-color: #222222;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.content-card .card img {
+    width: 100%; /* Para ocupar todo el ancho del contenedor */
+    border-radius: 15px; /* Ajusta el redondeo de la imagen */
+}
+
+.content-card .card h1 {
+    margin-top: 1rem; /* Espacio entre el título y la descripción */
+    color: #ccc;
+}
+
+.content-card .card p {
+    margin: 1rem 0;
+    color: #ccc;
+}
+
+.content-card .card a {
+    width: 100%;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #00ffc3;
+    display: block;
+    margin-top: 1rem; /* Espacio entre la descripción y el enlace */
+}
+
+
+.content-card-sobre{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #222222;
+    border-radius: 1.6rem;
+    border: 1px solid #ccc;
+}
+
+.card-sobre-mi{
+    margin: 3rem;
+    color: #ccc;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
+footer{
+    background-color: #101010;
+}
+
+footer .box-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer a{
+    margin: 3rem;
+}
+
+footer .box-footer .mas-info{
+    margin: 5rem;
+}
+
+footer .box-footer .boxed div ul a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+footer .box-footer .boxed div ul a:hover{
+    transition: 0.3s;
+    color: #00d5ff;;
+    cursor: pointer;
+}
+
+
+
+
+
+
+  /* Ajustes para tamaños de pantalla más pequeños */
+  @media screen and (max-width: 768px) {
+    .card {
+      flex: 0 0 calc(50% - 20px); /* Dos columnas en pantallas más pequeñas */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      flex: 0 0 calc(100% - 20px); /* Una columna en pantallas aún más pequeñas */
+    }
+  }
+  
+
+
+
+
+/* Estilos originales */
+
+/* ... (otros estilos) ... */
+
+/* Ajustes para tamaños de pantalla más pequeños */
+@media screen and (min-width:324px) and ( max-width: 768px) {
+
+    header .section-nav{
+        display: none;
+    }
+
+    header .header-print div{
+        margin-right: 1rem;
+        margin-left: 1rem;
+        /* margin-top: 1rem; */
+    }
+
+    header .header-print h1{
+        font-size: 2rem;
+
+    }
+
+
+    header .header-print p{
+        font-size: 1rem;
+    }
+
+    .slider .slide-track .slide{
+        margin: 1.4rem;
+    }
+
+
+    .slider .slide-track .slide img{
+        width: 2.5rem;
+    }
+
+
+    main .container-more .nav-section button{
+        margin: 1rem;
+        width: 11rem;
+        font: 1rem;
+        height: 2.6rem;
+    }
+
+
+    main .container-more{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    main .container-more .nav-section{
+        display: inline-flex;
+        overflow-y: auto;
+    }
+    main .container-more .nav-section::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .content-card{
+        justify-content: center;
+    }
+
+
+
+    footer .box-footer .mas-info a{
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: 3rem; */
+    }
+
+
+
+
+
+
+
+
+    /* Otros ajustes necesarios para el encabezado y la barra de navegación */
+    /* ... */
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustes adicionales para pantallas aún más pequeñas */
+    /* ... */
+}

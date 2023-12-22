@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+    <header>
+        <section class="section-nav">
+            <nav>
+                
+                <ul>
+                    <img src="" alt="">
+                    <li><a href="">Poemas</a></li>
+                    <li><a href="">Sobre mi</a></li> 
+                    <li><a href="">Portafolio</a></li>
+                    <li><a href="">Trabaja conmigo</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="header-print">
+
+            <div>
+                <h1>Daniel Contreras Millan SFT.DEV</h1>
+                <p>Desarrollador de software especializado en Python... Escritor ocasional y diseñador UI / UX</p>
+            </div>
+
+        </section>
+    </header>
+
+    <main>
+        <div class="slider">
+            <div class="slide-track">
+
+                <div class="slide">
+                    <img src="/icons/vscode.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/html.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/css.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/javascript.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/express-js.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/node.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/python.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/git.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/github.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/top.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/figma.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/icons/vscode.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/html.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/css.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/javascript.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/express-js.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/node.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/python.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/git.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/github.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/top.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/figma.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/icons/vscode.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/html.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/css.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/javascript.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/express-js.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/node.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/python.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/git.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/github.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/top.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/icons/figma.png" alt="">
+                </div>
+                
+            </div>
+        </div> 
+        <section class="container-more">
+            <div class="nav-section">
+                
+                <button class="active">Portafolio</button>
+                <button class="active">conoceme</button>
+                <button class="active">Poemas</button>
+                
+            </div>
+            <div class="section-other">
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <section class="box-footer">
+            <section class="boxed mas-info">
+                <div>
+                    <ul>
+                        <a href="https://www.instagram.com/danycomill/">Instragram</a>
+                        <a href="https://www.facebook.com/profile.php?id=100017297310390">Facebook</a>
+                        <a href="https://www.linkedin.com/feed/">Linkedin</a>
+                        <a href="https://twitter.com/danycomill">Twitter</a>
+                        
+                    </ul>
+                </div>
+            </section>
+    
+    
+            <!-- <section class="boxed nosotros">
+                <div>
+                    <ul>
+                        <a href="">Trabaja con nosotros</a>
+                        <a href="">Propit en los Medios</a>
+                        <a href="">Nuestra mision</a>
+                        <a href="">Comentarios: </a>
+                    </ul>
+                </div>
+            </section>
+        </section> -->
+    </footer>
+    <!-- Dentro de productDetail.ejs -->
+
+<!-- ... (código HTML existente) ... -->
+
+<script>
+///////////////////Color de los botones al hacer click///////////////////////
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.nav-section button');
+
+    function changeActiveButton(clickedButton) {
+        buttons.forEach(button => {
+            if (button !== clickedButton) {
+                button.classList.remove('active');
+            }
+        });
+        clickedButton.classList.add('active');
+    }
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const buttonText = button.textContent;
+            const content = cards[buttonText];
+            changeSection(content);
+            changeActiveButton(button);
+        });
+    });
+
+    const defaultContent = cards['Portafolio']; // Cambio de 'portafolio' a 'Portafolio'
+    changeSection(defaultContent);
+
+    // Seleccionar el segundo botón para 'Portafolio' como predeterminado
+    const defaultActiveButton = document.querySelectorAll('.nav-section button')[1];
+    changeActiveButton(defaultActiveButton);
+});
+
+
+
+    function changeSection(cards) {
+        const sectionOther = document.querySelector('.section-other');
+        sectionOther.innerHTML = cards;
+    }
+
+
+
+
+
+    const cards = {
+
+        Portafolio: `
+        <div class="section">
+            <div class="content-card">
+                <div class="card">
+                    <img src="/img/crud1.jpg" alt="">
+                    <h1>CRUD de tareas</h1>
+                    <p>Puedes agregar y eliminar tareas las cuales se guardan en un array sin usar base de datos.</p>
+                    <a href="https://github.com/danycomill/crud-tareas">Ver mas</a>
+                </div>
+
+
+                <div class="card">
+                    <img src="/img/crud2.jpg" alt="">
+                    <h1>CRUD de productos para e-comerce</h1>
+                    <p>Agrega, edita, elimina y vusualiza productos. podras hacer click sobre el producto agregado para visualizarlo en una pantalla de detalle donde puedes comprarlo</p>
+                    <a href="https://github.com/danycomill/ecomerce-crud">Ver mas</a>
+                </div>
+
+
+                <div class="card">
+                    <img src="/img/bicis.jpg" alt="">
+                    <h1>BiciComerce</h1>
+                    <p>Logica en JavaScript para un comercio de bicicletas que te permitehacer 5 filtros diferentes</p>
+                    <a href="https://github.com/danycomill/Bici-comerce">Ver mas</a>
+                </div>
+
+
+                <div class="card">
+                    <img src="/img/propit.jpg" alt="">
+                    <h1>Propit</h1>
+                    <p>Front-End de pagina para comercio de propiedades por porcentaje. Home, Login y registro de usuarios</p>
+                    <a href="https://github.com/danycomill/propytech">Ver mas</a>
+                </div>
+
+
+                <div class="card">
+                    <img src="/img/expresify.jpg" alt="">
+                    <h1>Expresify</h1>
+                    <p>Front-End de pagina donde se conectan proveedores y comerciantes para realizar dropshipping o importaciones y exportaciones</p>
+                    <a href="https://github.com/danycomill/expresify">Ver mas</a>
+                </div>
+
+
+                <div class="card">
+                    <img src="/img/gind.jpg" alt="">
+                    <h1>GrindingCofee</h1>
+                    <p>Aplicacion completa para comprar cafe de diferentes marcas. Front-end y Back-end con bases de datos</p>
+                    <a href="https://github.com/imjonslz/grupo_9_GrindingCoffee">Ver mas</a>
+                </div>
+            </div>
+        <div class="section">
+        `,  
+        conoceme: `
+        <div class="section-sobre-mi">
+            <div class="content-card-sobre">
+                <div class="card-sobre-mi">
+                    <p>Mi nombre es Daniel Contreras Millan, pero pueden llamarme Danycomill. A mis 19 años, soy estudiante de desarrollo full-stack, con un camino que comenzó a los 15 años cuando me sumergí en el mundo de la programación Python.
+
+Si bien me dedico a la tecnología, tengo un lado artístico que pocos conocen: escribo ocasionalmente y me encanta pintar en óleo, además de tener una afinidad por el dibujo. Mi amor por la cocina me llevó a estudiarla por más de un año, explorando diferentes áreas de interés.
+
+Emprender es mi naturaleza; he probado más de cinco proyectos, aprendiendo valiosas lecciones incluso de aquellos que no tuvieron éxito. Soyt mante del Rock, el Punk y el Metal desde siempre (creo).
+
+Soy un viajero y aventurero que disfruta la soledad no por elección, sino por circunstancia. Mi pasión por la tecnología, la creatividad y la persistencia en el emprendimiento me impulsan a seguir explorando y aprendiendo en cada paso que doy.</p>
+                </div>
+            </div>
+        <div class="section">
+        `,
+        Poemas: `
+
+        <div class="section">
+            <div class="content-card">
+                <div class="card">
+                    <img src="/img/poema1.jpg" alt="">
+                    <h1>Por si algo me pasa (Pequeña historia)</h1>
+                    <p> versos revelan lucha, luz entre sombras, alma sellada en letras.</p>
+                    <a href="https://expresify.my.canva.site/por-si-algo-me-pasa-recuerda-estas-palabras">Ver mas</a>
+                </div>
+
+
+        <div class="section">
+        `,
+        
+    };
+
+   
+    document.addEventListener('DOMContentLoaded', () => {
+        const buttons = document.querySelectorAll('.nav-section button');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const buttonText = button.textContent;
+                const content = cards[buttonText];
+                changeSection(content);
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>
